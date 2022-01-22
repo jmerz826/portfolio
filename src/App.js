@@ -6,8 +6,14 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-        <Route path='/'>
+        <Route exact path='/'>
           <h2>path</h2>
+        </Route>
+        <Route path='/projects'>
+
+        </Route>
+        <Route path='/contact'>
+            
         </Route>
       </Switch>
     </div>
