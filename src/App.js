@@ -1,6 +1,6 @@
 import Header from "./components/header";
 import { Route, Switch } from 'react-router-dom';
-import HomePage from "./components/homePage";
+import HomePage from "./components/home/homePage";
 
 function App() {
   return (
