@@ -8,6 +8,7 @@ const HomeProject = (props) => {
   return (
     <StyledDiv>
           <h2>{project.name}</h2>
+          <img src={project.image}/>
     </StyledDiv>
   );
 };

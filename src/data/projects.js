@@ -1,3 +1,7 @@
+import jsArcadeImg from "../images/jsArcade.JPG";
+import secretFamilyRecipesImg from "../images/secretFamilyRecipes.JPG";
+import shopSmartImg from "../images/shopSmart.JPG";
+
 const projects = [
   {
     name: "John's JavaScript Arcade",
@@ -26,6 +30,7 @@ const projects = [
     },
     live_link: "http://js-arcade.vercel.app/",
     github_link: "https://github.com/jmerz826/js-arcade",
+    image: jsArcadeImg,
     time: "2/22",
   },
   {
@@ -46,6 +51,7 @@ const projects = [
     },
     live_link: "http://secret-family-recipes-cookbook-8.vercel.app/",
     github_link: "https://github.com/secret-family-recipes-08",
+    image: secretFamilyRecipesImg,
     time: "1/22-2/22",
   },
   {
@@ -66,6 +72,7 @@ const projects = [
     },
     live_link: "https://shop-smart.vercel.app/",
     github_link: "https://github.com/jmerz826/shop-smart",
+    image: shopSmartImg,
     time: "12/21-1/22",
   },
 ];
