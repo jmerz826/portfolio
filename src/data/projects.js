@@ -4,6 +4,7 @@ import shopSmartImg from "../images/shopSmart.JPG";
 
 const projects = [
   {
+    id: 1,
     name: "John's JavaScript Arcade",
     description:
       "This is my favorite project that I've done... so far ;). I built the frontend using React, and it contains components that access the backend API via HTTP calls through axios.  I restricted certain HTTP calls through server-side middleware that I created.  I built the backend API using Node.js and utilizing the Express.js framework. The Postgres database schema was made using knex.js, and has restricted access via middleware I made utilizing jsonwebtoken authentication.  Inappropriate public leaderboard posts are censored with the use of Michael Price's \"bad-words\" filter.",
@@ -34,6 +35,7 @@ const projects = [
     time: "2/22",
   },
   {
+    id: 2,
     name: "Secret Family Recipes",
     description:
       "Secret Family Recipes is a group project completed for my final build week at BloomTech. I, personally, spearheaded the backend development. I built the API using Node.js and utilizing the Express.js framework.  The Postgres database schema was made using knex.js, and has restricted access via middleware I made utilizing jsonwebtoken authentication.  User passwords are hashed and then stored on the database through the use of bcrypt.",
@@ -55,6 +57,7 @@ const projects = [
     time: "1/22-2/22",
   },
   {
+    id: 3,
     name: "Shop Smart",
     description:
       "Shop Smart is my first notable independent project. The project serves as a shopping companion app, implementing unique methods of creating and managing shopping lists. The project showcases material learned in the first half of BloomTech's full stack program.",

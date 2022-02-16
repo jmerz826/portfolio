@@ -6,6 +6,7 @@ import HomeProjects from "./homeProjects";
 const StyledHomePage = styled.div`
   #content-container {
     display: flex;
+    text-align: center;
   }
   #about-me {
     background-color: navy;
