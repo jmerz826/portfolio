@@ -49,6 +49,11 @@ table {
 
 /* *******************************CODE STARTS HERE******************************* */
 
+*{
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
 body{
 	background-color: rgb(110, 106, 106);
 	color:white

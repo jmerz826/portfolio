@@ -16,7 +16,7 @@ const StyledHomePage = styled.div`
     background-color: gold;
     width: 50%;
   }
-  img {
+  #headshot {
     width: 50%;
     border-radius: 9999px;
   }
@@ -29,7 +29,7 @@ const HomePage = () => {
       <div id="content-container">
         <div id="about-me">
           <h3>About Me</h3>
-          <img src={headshot} alt="headshot" />
+          <img src={headshot} alt="headshot" id="headshot"/>
           <p>
             My name is John, and I am an engineer at heart.
             <br /> I posess a bachelor's degree in mechanical engineering, and
