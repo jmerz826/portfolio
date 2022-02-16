@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import headshot from "../../images/linkedinPhoto.jpg";
+import HomeProjects from "./homeProjects";
 
 const StyledHomePage = styled.div`
   #content-container {
@@ -45,6 +46,7 @@ const HomePage = () => {
         </div>
         <div id="projects-container">
           <h3>Projects</h3>
+          <HomeProjects />
         </div>
       </div>
     </StyledHomePage>
