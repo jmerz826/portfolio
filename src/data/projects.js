@@ -32,7 +32,7 @@ const projects = [
     live_link: "http://js-arcade.vercel.app/",
     github_link: "https://github.com/jmerz826/js-arcade",
     image: jsArcadeImg,
-    time: "2/22",
+    time: "2/22-2/22",
   },
   {
     id: 2,
