@@ -43,6 +43,10 @@ const StyledDiv = styled.div`
           content: "🔨 ";
         }
       }
+      h5{
+        text-align: center;
+        font-weight: bold;
+      }
     }
 
     p,
