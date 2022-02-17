@@ -8,18 +8,51 @@ const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 5% 10%;
-  border: 2px solid white;
+  border: 1px solid lightblue;
   border-radius: 24px;
   padding: 2%;
 
   img {
     border-radius: 24px;
+    margin: 1% 0;
   }
 
   a {
     text-decoration: none;
     font-style: italic;
     display: block;
+    color: lightblue;
+  }
+
+  .project-details {
+    margin: 2% 4%;
+  }
+
+  .project-details-section {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+
+    .tools-list {
+      display: flex;
+      width: 65%;
+      justify-content: space-around;
+    }
+
+    p,
+    div {
+      margin-left: 1%;
+    }
+    a {
+      display: inline-block;
+    }
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+    a {
+      margin: 0 1%;
+    }
   }
 `;
 
@@ -33,16 +66,50 @@ const HomeProject = (props) => {
       <h2>{name}</h2>
       <img src={image} alt={name + " screenshot"} />
       {activeProject === id && (
-        <div>
-          <h3>Description: {description}</h3>
-          <a href={live_link} target="_blank" rel="noreferrer">
-            Check it out! 🔗
-          </a>
-          <a href={github_link} target="_blank" rel="noreferrer">
-            Project GitHub🔗
-          </a>
-          <h3>Development period: {time}</h3>
-          <Link to='/projects'>Learn more!</Link>
+        <div className="project-details">
+          <div className="project-details-section">
+            <h3>Description:</h3>
+            <p>
+              {description.slice(0, 120)}... <Link>See more</Link>
+            </p>
+          </div>
+          <div className="project-details-section">
+            <h3>Tools Used:</h3>
+            <div className="tools-list">
+              {tools.frontend.length >= 1 && (
+                <ul>
+                  <h4>Frontend</h4>
+                  {tools.frontend
+                    .map((tool) => <li key={tool}>{tool}</li>)
+                    .slice(0, 3)}
+                  <li>
+                    <Link to="/projects">See full list</Link>
+                  </li>
+                </ul>
+              )}
+              {tools.backend.length >= 1 && (
+                <ul>
+                  <h4>Backend</h4>
+                  {tools.backend
+                    .map((tool) => <li key={tool}>{tool}</li>)
+                    .slice(0, 3)}
+                  <li>
+                    <Link to="/projects">See full list</Link>
+                  </li>
+                </ul>
+              )}
+            </div>
+          </div>
+          <div className="links">
+            <Link to="/projects">See project page!</Link>
+            <a href={live_link} target="_blank" rel="noreferrer">
+              Check out the site! 🔗
+            </a>
+            <a href={github_link} target="_blank" rel="noreferrer">
+              Project GitHub🔗
+            </a>
+          </div>
+          <h5>Development period: {time}</h5>
         </div>
       )}
     </StyledDiv>

@@ -10,11 +10,11 @@ const StyledHomePage = styled.div`
   }
   #about-me {
     background-color: navy;
-    width: 50%;
+    width: 55%;
   }
   #projects-container {
     background-color: gold;
-    width: 50%;
+    width: 45%;
   }
   #headshot {
     width: 50%;

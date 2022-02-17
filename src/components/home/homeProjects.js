@@ -14,7 +14,7 @@ const HomeProjects = (props) => {
   return (
     <StyledDiv>
           {projects.map(proj => {
-              return <HomeProject project={proj} activeProject={activeProject}/>
+            return <HomeProject project={proj} activeProject={activeProject} key={proj.id}/>
           })}
     </StyledDiv>
   );
