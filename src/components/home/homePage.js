@@ -28,7 +28,11 @@ const StyledHomePage = styled.div`
 const HomePage = () => {
   return (
     <StyledHomePage>
-      <h2>Welcome.</h2>
+      <div className="ticker-wrap">
+        <div className="ticker">
+            <h1>Welcome.</h1>
+        </div>
+      </div>
       <div id="content-container">
         <div id="about-me">
           <h3>About Me</h3>

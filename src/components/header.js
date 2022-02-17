@@ -3,13 +3,15 @@ import styled from "styled-components";
 
 const StyledHeader = styled.header`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: darkcyan;
+    padding: 1% 2%;
 `
 
 const Header = () => {
     return (
         <StyledHeader>
-            <h1>John Merz</h1>
+            <h2>John Merz</h2>
             <nav>
                 <Link to='/'>Home</Link>
                 <Link to='/projects'>Projects</Link>
