@@ -2,11 +2,14 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
-  font-family: "Yellowtail", cursive;
   display: flex;
   justify-content: space-between;
   background-color: darkcyan;
   padding: 1% 2%;
+
+  h2 {
+    font-family: "Yellowtail", cursive;
+  }
 `;
 
 const Header = () => {

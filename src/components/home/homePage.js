@@ -31,20 +31,25 @@ const StyledHomePage = styled.div`
       margin: 2% 10%;
       padding-bottom: 2%;
     }
-    h3 {
+    .section-head{
+      text-decoration: underline;
+    }
+    #personal-quote {
       font-style: italic;
     }
-    .education{
-      display: flex;
-      justify-content: space-around;
-      padding-top: 4%;
-      div{
-        width: 40%;
+    .education {
+      .edu-cards {
+        display: flex;
+        justify-content: space-around;
+        div {
+          width: 40%;
+        }
       }
-      img{
+      padding-top: 4%;
+      img {
         border-radius: 9999px;
       }
-      h4{
+      h4 {
         margin-top: 2%;
         font-style: italic;
       }
