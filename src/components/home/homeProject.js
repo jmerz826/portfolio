@@ -32,6 +32,7 @@ const StyledDiv = styled.div`
     display: flex;
     align-items: flex-start;
     text-align: left;
+    margin-bottom: 2%;
 
     .tools-list {
       display: flex;
@@ -109,7 +110,7 @@ const HomeProject = (props) => {
               Project GitHub🔗
             </a>
           </div>
-          <h5>Development period: {time}</h5>
+          <p>Development period: {time}</p>
         </div>
       )}
     </StyledDiv>
