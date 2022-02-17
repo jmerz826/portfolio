@@ -204,6 +204,7 @@ a {
 }
 .ticker {
   display: inline-block;
+  font-family: 'Roboto Serif', sans-serif;
   white-space: nowrap;
   padding-right: 100%;
   box-sizing: content-box;
