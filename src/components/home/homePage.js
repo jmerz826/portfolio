@@ -7,6 +7,10 @@ const StyledHomePage = styled.div`
   #content-container {
     display: flex;
     text-align: center;
+    
+    h2{
+      margin-top: 2%;
+    }
   }
   #about-me {
     background-color: navy;
@@ -35,7 +39,7 @@ const HomePage = () => {
       </div>
       <div id="content-container">
         <div id="about-me">
-          <h3>About Me</h3>
+          <h2>About Me</h2>
           <img src={headshot} alt="headshot" id="headshot" />
           <p>
             My name is John, and I am an engineer at heart.
@@ -53,7 +57,7 @@ const HomePage = () => {
           </p>
         </div>
         <div id="projects-container">
-          <h3>Projects</h3>
+          <h2>Projects</h2>
           <HomeProjects />
         </div>
       </div>
