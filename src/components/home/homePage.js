@@ -33,6 +33,20 @@ const StyledHomePage = styled.div`
     h3 {
       font-style: italic;
     }
+    .education{
+      display: flex;
+      justify-content: space-around;
+      div{
+        width: 40%;
+      }
+      img{
+        border-radius: 9999px;
+      }
+      h4{
+        margin-top: 2%;
+        font-style: italic;
+      }
+    }
   }
   #projects-container {
     background-color: gold;
