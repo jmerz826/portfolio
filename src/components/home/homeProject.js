@@ -38,6 +38,11 @@ const StyledDiv = styled.div`
       display: flex;
       width: 65%;
       justify-content: space-around;
+      li {
+        &::before {
+          content: "🔨 ";
+        }
+      }
     }
 
     p,
@@ -64,22 +69,22 @@ const HomeProject = (props) => {
 
   return (
     <StyledDiv>
-      <h2>{name}</h2>
+      <h3>{name}</h3>
       <img src={image} alt={name + " screenshot"} />
       {activeProject === id && (
         <div className="project-details">
           <div className="project-details-section">
-            <h3>Description:</h3>
+            <h4>Description:</h4>
             <p>
               {description.slice(0, 120)}... <Link>See more</Link>
             </p>
           </div>
           <div className="project-details-section">
-            <h3>Tools Used:</h3>
+            <h4>Tools Used:</h4>
             <div className="tools-list">
               {tools.frontend.length >= 1 && (
                 <ul>
-                  <h4>Frontend</h4>
+                  <h5>Frontend</h5>
                   {tools.frontend
                     .map((tool) => <li key={tool}>{tool}</li>)
                     .slice(0, 3)}
@@ -90,7 +95,7 @@ const HomeProject = (props) => {
               )}
               {tools.backend.length >= 1 && (
                 <ul>
-                  <h4>Backend</h4>
+                  <h5>Backend</h5>
                   {tools.backend
                     .map((tool) => <li key={tool}>{tool}</li>)
                     .slice(0, 3)}

@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
 `;
 
 const HomeProjects = (props) => {
-    const [activeProject, setActiveProject] = useState(0)
+    const [activeProject, setActiveProject] = useState(1)
   return (
     <StyledDiv>
           {projects.map(proj => {

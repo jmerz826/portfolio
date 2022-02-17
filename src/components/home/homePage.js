@@ -4,24 +4,41 @@ import headshot from "../../images/linkedinPhoto.jpg";
 import HomeProjects from "./homeProjects";
 
 const StyledHomePage = styled.div`
+  overflow-x: hidden;
   #content-container {
     display: flex;
     text-align: center;
-    
-    h2{
+
+    h2 {
       margin-top: 2%;
     }
   }
   #about-me {
     background-color: navy;
-    width: 55%;
+    width: 60%;
+    p,
+    a {
+      font-size: 1.25rem;
+    }
+    a {
+      color: gold;
+      text-decoration: none;
+      font-style: italic;
+    }
+    p {
+      margin: 0 10%;
+    }
+    h3 {
+      font-style: italic;
+    }
   }
   #projects-container {
     background-color: gold;
-    width: 45%;
+    width: 40%;
+    border-left: 1px solid black;
   }
   #headshot {
-    width: 50%;
+    width: 40%;
     margin: 2% 0;
     border-radius: 9999px;
     border: 4px solid black;
@@ -34,17 +51,17 @@ const HomePage = () => {
     <StyledHomePage>
       <div className="ticker-wrap">
         <div className="ticker">
-            <h1>Welcome.</h1>
+          <h1>Welcome.</h1>
         </div>
       </div>
       <div id="content-container">
         <div id="about-me">
           <h2>About Me</h2>
           <img src={headshot} alt="headshot" id="headshot" />
+          <h3>My name is John, and I am an engineer at heart.</h3>
           <p>
-            My name is John, and I am an engineer at heart.
-            <br /> I posess a bachelor's degree in mechanical engineering, and
-            am currently studying full stack web development at{" "}
+            I posess a bachelor's degree in mechanical engineering, and am
+            currently studying full stack web development at{" "}
             <a
               href="https://www.bloomtech.com/courses/full-stack-web-development"
               target={"_blank"}
