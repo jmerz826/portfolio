@@ -29,6 +29,7 @@ const StyledHomePage = styled.div`
     }
     p {
       margin: 2% 10%;
+      padding-bottom: 2%;
     }
     h3 {
       font-style: italic;
@@ -36,6 +37,7 @@ const StyledHomePage = styled.div`
     .education{
       display: flex;
       justify-content: space-around;
+      padding-top: 4%;
       div{
         width: 40%;
       }
