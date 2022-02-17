@@ -3,6 +3,7 @@ import styled from "styled-components";
 import headshot from "../../images/linkedinPhoto.jpg";
 import HomeProjects from "./homeProjects";
 import Bio from "./bio";
+import Ticker from "./ticker";
 
 const StyledHomePage = styled.div`
   overflow-x: hidden;
@@ -50,15 +51,10 @@ const StyledHomePage = styled.div`
 const HomePage = () => {
   return (
     <StyledHomePage>
-      <div className="ticker-wrap">
-        <div className="ticker">
-          <h1>Welcome.</h1>
-        </div>
-      </div>
+      <Ticker />
       <div id="content-container">
-        <Bio headshot={headshot}/>
+        <Bio headshot={headshot} />
         <div id="projects-container">
-          <h2>Projects</h2>
           <HomeProjects />
         </div>
       </div>
