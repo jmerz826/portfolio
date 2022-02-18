@@ -8,6 +8,7 @@ import Ticker from "./ticker";
 const StyledHomePage = styled.div`
   overflow-x: hidden;
   #content-container {
+    border-top: 2px solid black;
     display: flex;
     text-align: center;
 

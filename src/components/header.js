@@ -8,6 +8,7 @@ const StyledHeader = styled.header`
   background-color: #ff8000;
   padding: 1% 2%;
   color: rgb(37, 37, 37);
+  border-bottom: 2px solid black;
 
   h2 {
     font-family: "Yellowtail", cursive;
