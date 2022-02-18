@@ -67,20 +67,20 @@ const StyledDiv = styled.div`
 `;
 
 const HomeProject = (props) => {
-  const { project, activeProject } = props;
+  const { project, activeProject, handleClick } = props;
   const { id, name, description, tools, live_link, github_link, image, time } =
     project;
 
   return (
-    <StyledDiv>
-      <h3>{name}</h3>
-      <img src={image} alt={name + " screenshot"} />
-      {activeProject === id && (
+    <StyledDiv /*id={id}*/ onClick={() => handleClick(id)}>
+      <h3 /*id={id}*/>{name}</h3>
+      <img src={image} alt={name + " screenshot"} /*id={id}*//>
+      {Number(activeProject) === id && (
         <div className="project-details">
           <div className="project-details-section">
             <h4>Description:</h4>
             <p>
-              {description.slice(0, 120)}... <Link>See more</Link>
+              {description.slice(0, 120)}... <Link to="/projects">See more</Link>
             </p>
           </div>
           <div className="project-details-section">
