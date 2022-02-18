@@ -16,7 +16,6 @@ import vsLogo from "../../images/logos/vsLogo.png";
 import jestLogo from "../../images/logos/jestLogo.png";
 import gitLogo from "../../images/logos/gitLogo.png";
 
-
 const StyledLogos = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -62,10 +61,7 @@ const Logos = () => {
         <h4>css3</h4>
       </div>
       <div>
-        <img
-          src={htmlLogo}
-          alt="html5"
-        />
+        <img src={htmlLogo} alt="html5" />
         <h4>html5</h4>
       </div>
       <div>
@@ -73,45 +69,27 @@ const Logos = () => {
         <h4>redux</h4>
       </div>
       <div>
-        <img
-          src={pgLogo}
-          alt="postgresql"
-        />
+        <img src={pgLogo} alt="postgresql" />
         <h4>postgresql</h4>
       </div>
       <div>
-        <img
-          src={nodeLogo}
-          alt="nodejs"
-        />
+        <img src={nodeLogo} alt="nodejs" />
         <h4>nodejs</h4>
       </div>
       <div>
-        <img
-          src={expressLogo}
-          alt="express"
-        />
+        <img src={expressLogo} alt="express" />
         <h4>express</h4>
       </div>
       <div>
-        <img
-          src={vsLogo}
-          alt="vscode"
-        />
+        <img src={vsLogo} alt="vscode" />
         <h4>vscode</h4>
       </div>
       <div>
-        <img
-          src={jestLogo}
-          alt="jest"
-        />
+        <img src={jestLogo} alt="jest" />
         <h4>jest</h4>
       </div>
       <div>
-        <img
-          src={gitLogo}
-          alt="git"
-        />
+        <img src={gitLogo} alt="git" />
         <h4>git</h4>
       </div>
       <div>
