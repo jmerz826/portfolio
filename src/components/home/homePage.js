@@ -11,13 +11,9 @@ const StyledHomePage = styled.div`
     border-top: 2px solid black;
     display: flex;
     text-align: center;
-
-    h2 {
-      margin-top: 2%;
-    }
   }
   #about-me {
-    background-color: #0F4C81;
+    background-color: #0f4c81;
     width: 60%;
     p,
     a {
