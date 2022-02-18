@@ -13,12 +13,13 @@ const StyledHeader = styled.header`
   h2 {
     font-family: "Yellowtail", cursive;
     font-size: 3.6rem;
+    width: 14%;
   }
 
   .paths {
     width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     a {
       color: inherit;
       text-decoration: none;
@@ -27,7 +28,7 @@ const StyledHeader = styled.header`
       padding: 0.5% 4%;
       border: 2px solid rgb(37, 37, 37);
       border-radius: 9999px;
-      :hover{
+      :hover {
         color: white;
         background-color: rgb(37, 37, 37);
       }
