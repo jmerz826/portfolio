@@ -13,9 +13,9 @@ const StyledLogos = styled.div`
   div {
     border-radius: 16px;
     border: 2px solid gold;
-    width: 12%;
+    width: 15%;
     text-transform: capitalize;
-    margin: 3%;
+    margin: 2%;
     height: 160px;
     background-color: rgb(37, 37, 37);
     position: relative;
