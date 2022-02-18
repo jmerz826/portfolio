@@ -17,7 +17,7 @@ const StyledHomePage = styled.div`
     }
   }
   #about-me {
-    background-color: navy;
+    background-color: #0F4C81;
     width: 60%;
     p,
     a {

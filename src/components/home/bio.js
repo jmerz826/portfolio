@@ -39,6 +39,7 @@ const Bio = (props) => {
           </div>
           <div id="bloom-card">
             <img
+              style={{border: "2px solid black"}}
               src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/408/original/Bloom_Institute_of_Technology_logo.png"
               alt="BloomTech logo"
             />
