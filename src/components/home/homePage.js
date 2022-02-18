@@ -29,10 +29,10 @@ const StyledHomePage = styled.div`
     }
     p {
       margin: 2% 10%;
-      padding-bottom: 2%;
     }
-    .section-head{
+    .section-head {
       text-decoration: underline;
+      margin-top: 1%;
     }
     #personal-quote {
       font-style: italic;

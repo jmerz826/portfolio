@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import reduxLogo from "../../images/logos/redux.png";
+import herokuLogo from "../../images/logos/herokuLogo.png";
+import javaLogo from "../../images/logos/java.png";
 
 const StyledLogos = styled.div`
   display: flex;
@@ -7,22 +10,24 @@ const StyledLogos = styled.div`
   justify-content: space-around;
   align-items: center;
   padding: 2%;
-  div{
+  div {
+    border-radius: 16px;
+    border: 2px solid gold;
     width: 12%;
     text-transform: capitalize;
     margin: 3%;
     height: 160px;
-    background-color: gold;
+    background-color: rgb(37, 37, 37);
     position: relative;
     img {
-      padding:10% 5%;
+      padding: 10% 5%;
       height: 80%;
     }
-    h4{
+    h4 {
       position: absolute;
       bottom: 0;
-      left:0;
-      right:0;
+      left: 0;
+      right: 0;
       margin-bottom: 4%;
     }
   }
@@ -110,10 +115,7 @@ const Bio = (props) => {
             <h4>html5</h4>
           </div>
           <div>
-            <img
-              src="http://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png"
-              alt="redux"
-            />
+            <img src={reduxLogo} alt="redux" />
             <h4>redux</h4>
           </div>
           <div>
@@ -159,17 +161,11 @@ const Bio = (props) => {
             <h4>git</h4>
           </div>
           <div>
-            <img
-              src="http://assets.stickpng.com/images/58480873cef1014c0b5e48ea.png"
-              alt="heroku"
-            />
+            <img src={herokuLogo} alt="heroku" />
             <h4>heroku</h4>
           </div>
           <div>
-            <img
-              src="http://assets.stickpng.com/images/58480979cef1014c0b5e4901.png"
-              alt="java"
-            />
+            <img src={javaLogo} alt="java" />
             <h4>java</h4>
           </div>
         </StyledLogos>
