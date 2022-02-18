@@ -1,37 +1,38 @@
 import React from "react";
-import styled from "styled-components";
-import reduxLogo from "../../images/logos/redux.png";
-import herokuLogo from "../../images/logos/herokuLogo.png";
-import javaLogo from "../../images/logos/java.png";
+import Logos from "./logos";
+// import styled from "styled-components";
+// import reduxLogo from "../../images/logos/redux.png";
+// import herokuLogo from "../../images/logos/herokuLogo.png";
+// import javaLogo from "../../images/logos/java.png";
 
-const StyledLogos = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 2%;
-  div {
-    border-radius: 16px;
-    border: 2px solid gold;
-    width: 15%;
-    text-transform: capitalize;
-    margin: 2%;
-    height: 160px;
-    background-color: rgb(37, 37, 37);
-    position: relative;
-    img {
-      padding: 10% 5%;
-      height: 80%;
-    }
-    h4 {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin-bottom: 4%;
-    }
-  }
-`;
+// const StyledLogos = styled.div`
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-around;
+//   align-items: center;
+//   padding: 2%;
+//   div {
+//     border-radius: 16px;
+//     border: 2px solid gold;
+//     width: 15%;
+//     text-transform: capitalize;
+//     margin: 2%;
+//     height: 160px;
+//     background-color: rgb(37, 37, 37);
+//     position: relative;
+//     img {
+//       padding: 10% 5%;
+//       height: 80%;
+//     }
+//     h4 {
+//       position: absolute;
+//       bottom: 0;
+//       left: 0;
+//       right: 0;
+//       margin-bottom: 4%;
+//     }
+//   }
+// `;
 
 const Bio = (props) => {
   const { headshot } = props;
@@ -85,7 +86,8 @@ const Bio = (props) => {
       </div>
       <div className="skills">
         <h3 className="section-head">Skills & Technologies</h3>
-        <StyledLogos>
+        <Logos />
+        {/* <StyledLogos>
           <div>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
@@ -168,7 +170,7 @@ const Bio = (props) => {
             <img src={javaLogo} alt="java" />
             <h4>java</h4>
           </div>
-        </StyledLogos>
+        </StyledLogos> */}
       </div>
     </div>
   );
