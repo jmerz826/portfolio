@@ -9,8 +9,21 @@ const StyledLogos = styled.div`
   padding: 2%;
   div{
     width: 12%;
+    text-transform: capitalize;
+    margin: 3%;
+    height: 160px;
+    background-color: gold;
+    position: relative;
     img {
-      width: 90%;
+      padding:10% 5%;
+      height: 80%;
+    }
+    h4{
+      position: absolute;
+      bottom: 0;
+      left:0;
+      right:0;
+      margin-bottom: 4%;
     }
   }
 `;
@@ -73,78 +86,91 @@ const Bio = (props) => {
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
               alt="react"
             />
+            <h4>react</h4>
           </div>
           <div>
             <img
               src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"
               alt="javascript"
             />
+            <h4>javascript</h4>
           </div>
           <div>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/240px-CSS3_logo.svg.png"
               alt="css3"
             />
+            <h4>css3</h4>
           </div>
           <div>
             <img
               src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
               alt="html5"
             />
+            <h4>html5</h4>
           </div>
           <div>
             <img
               src="http://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png"
               alt="redux"
             />
+            <h4>redux</h4>
           </div>
           <div>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
               alt="postgresql"
             />
+            <h4>postgresql</h4>
           </div>
           <div>
             <img
               src="https://destatic.blob.core.windows.net/images/nodejs-logo.png"
               alt="nodejs"
             />
+            <h4>nodejs</h4>
           </div>
           <div>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
               alt="express"
             />
+            <h4>express</h4>
           </div>
           <div>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
               alt="vscode"
             />
+            <h4>vscode</h4>
           </div>
           <div>
             <img
               src="https://cdn.iconscout.com/icon/free/png-256/jest-3627087-3029495.png"
               alt="jest"
             />
+            <h4>jest</h4>
           </div>
           <div>
             <img
               src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
               alt="git"
             />
+            <h4>git</h4>
           </div>
           <div>
             <img
               src="http://assets.stickpng.com/images/58480873cef1014c0b5e48ea.png"
               alt="heroku"
             />
+            <h4>heroku</h4>
           </div>
           <div>
             <img
               src="http://assets.stickpng.com/images/58480979cef1014c0b5e4901.png"
               alt="java"
             />
+            <h4>java</h4>
           </div>
         </StyledLogos>
       </div>
