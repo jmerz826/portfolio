@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const StyledDiv = styled.div`
   background-color: rgb(37, 37, 37);
@@ -70,11 +71,12 @@ const HomeProject = (props) => {
   const { project, activeProject, handleClick } = props;
   const { id, name, description, tools, live_link, github_link, image, time } =
     project;
+  const { push } = useHistory();
 
   return (
-    <StyledDiv /*id={id}*/ onClick={() => handleClick(id)}>
-      <h3 /*id={id}*/>{name}</h3>
-      <img src={image} alt={name + " screenshot"} /*id={id}*//>
+    <StyledDiv onClick={() => handleClick(id)} onDoubleClick={() => push('/projects')}>
+      <h3 >{name}</h3>
+      <img src={image} alt={name + " screenshot"}/>
       {Number(activeProject) === id && (
         <div className="project-details">
           <div className="project-details-section">
