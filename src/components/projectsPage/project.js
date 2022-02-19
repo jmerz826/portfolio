@@ -4,12 +4,11 @@ import linkIcon from "../../images/link.png";
 
 const StyledDiv = styled.div`
   margin: 2%;
-  border: 4px solid red;
+  border: 2px solid red;
   border-radius: 3rem;
   padding: 1%;
   img {
-    width: 100%;
-    border-radius: inherit;
+    border-radius: 3rem;
     box-shadow: 5px 5px 10px black;
     :hover {
       filter: blur(6px);
@@ -19,7 +18,7 @@ const StyledDiv = styled.div`
   }
   .big-proj-img {
     margin: 1% auto;
-    width: 65%;
+    width: 60%;
     background-size: 16%;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,7 +31,12 @@ const StyledDiv = styled.div`
     }
   }
   p {
-    margin: 0 12.5%;
+    margin: 0 20%;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-style: italic;
   }
 `;
 
@@ -47,7 +51,9 @@ const Project = (props) => {
         className="big-proj-img"
         style={{ backgroundImage: `url(${linkIcon})` }}
       >
-        <img src={image} alt={name + "screenshot"} />
+        <a href={live_link} target="_blank" rel="noreferrer">
+          <img src={image} alt={name + "screenshot"} />
+        </a>
         {/* <img src={linkIcon} alt="link" id="link-icon"/> */}
       </div>
       <div className="project-detail-section description">
@@ -80,6 +86,9 @@ const Project = (props) => {
         </div>
       </div>
       <div className="project-detail-section">
+        <a href={github_link} target="_blank" rel="noreferrer">
+          GitHub🔗
+        </a>
         <p>Project active {time}</p>
       </div>
     </StyledDiv>
