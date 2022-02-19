@@ -8,6 +8,7 @@ const StyledDiv = styled.div`
 
   h2 {
     padding-top: 2%;
+    margin: 0;
   }
 
   img {

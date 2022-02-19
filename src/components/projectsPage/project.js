@@ -3,12 +3,17 @@ import styled from "styled-components";
 import linkIcon from "../../images/link.png";
 
 const StyledDiv = styled.div`
-  margin: 2%;
-  border: 2px solid red;
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #e41717 74%);
+  margin: 5% 10%;
+  box-shadow: 5px 5px 10px black;
   border-radius: 3rem;
   padding: 1%;
+  .project-detail-section h3{
+    text-decoration: underline;
+  }
   img {
-    border-radius: 3rem;
+    /* border-radius: 3rem; */
     box-shadow: 5px 5px 10px black;
     :hover {
       filter: blur(6px);
@@ -22,6 +27,9 @@ const StyledDiv = styled.div`
     background-size: 16%;
     background-repeat: no-repeat;
     background-position: center;
+    img {
+      border-radius: 3rem;
+    }
   }
   .tools {
     display: flex;
@@ -37,6 +45,9 @@ const StyledDiv = styled.div`
     color: inherit;
     text-decoration: none;
     font-style: italic;
+  }
+  h2{
+    font-weight: bold;
   }
 `;
 
@@ -57,16 +68,16 @@ const Project = (props) => {
         {/* <img src={linkIcon} alt="link" id="link-icon"/> */}
       </div>
       <div className="project-detail-section description">
-        <h3>Description</h3>
+        <h4>Description</h4>
         <p>{description}</p>
       </div>
       <div className="project-detail-section">
-        <h3>Tools</h3>
+        <h4>Tools</h4>
         <div className="tools">
           {!!tools.frontend.length && (
             <div>
               <ul>
-                <h4>Frontend</h4>
+                <h5>Frontend</h5>
                 {tools.frontend.map((el) => {
                   return <li key={el}>{el}</li>;
                 })}
@@ -76,7 +87,7 @@ const Project = (props) => {
           {!!tools.backend.length && (
             <div>
               <ul>
-                <h4>Backend</h4>
+                <h5>Backend</h5>
                 {tools.backend.map((el) => {
                   return <li key={el}>{el}</li>;
                 })}

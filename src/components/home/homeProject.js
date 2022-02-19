@@ -74,7 +74,7 @@ const HomeProject = (props) => {
   const { push } = useHistory();
 
   return (
-    <StyledDiv onClick={() => handleClick(id)} onDoubleClick={() => push('/projects')}>
+    <StyledDiv onClick={() => handleClick(id)} onDoubleClick={() => push(`/projects#${id}`)}>
       <h3 >{name}</h3>
       <img src={image} alt={name + " screenshot"}/>
       {Number(activeProject) === id && (
@@ -82,7 +82,7 @@ const HomeProject = (props) => {
           <div className="project-details-section">
             <h4>Description:</h4>
             <p>
-              {description.slice(0, 120)}... <Link to="/projects">See more</Link>
+              {description.slice(0, 120)}... <Link to={`/projects#${id}`}>See more</Link>
             </p>
           </div>
           <div className="project-details-section">
@@ -95,7 +95,7 @@ const HomeProject = (props) => {
                     .map((tool) => <li key={tool}>{tool}</li>)
                     .slice(0, 3)}
                   <li>
-                    <Link to="/projects">See full list</Link>
+                    <Link to={`/projects#${id}`}>See full list</Link>
                   </li>
                 </ul>
               )}
@@ -106,14 +106,14 @@ const HomeProject = (props) => {
                     .map((tool) => <li key={tool}>{tool}</li>)
                     .slice(0, 3)}
                   <li>
-                    <Link to="/projects">See full list</Link>
+                    <Link to={`/projects#${id}`}>See full list</Link>
                   </li>
                 </ul>
               )}
             </div>
           </div>
           <div className="links">
-            <Link to="/projects">See project page!</Link>
+            <Link to={`/projects#${id}`}>See project page!</Link>
             <a href={live_link} target="_blank" rel="noreferrer">
               Check out the site! 🔗
             </a>

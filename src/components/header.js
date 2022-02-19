@@ -9,9 +9,9 @@ const StyledHeader = styled.header`
   padding: 1% 2%;
   color: rgb(37, 37, 37);
   border-bottom: 2px solid black;
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 1; */
 
   h2 {
     font-family: "Yellowtail", cursive;

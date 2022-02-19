@@ -14,12 +14,12 @@ const HomeProjects = (props) => {
   const handleClick = (id) => {
     if (id) {
       if (id === activeProject) {
-        setActiveProject(0)
+        setActiveProject(0);
       } else {
-        setActiveProject(id)
+        setActiveProject(id);
       }
     }
-  }
+  };
   return (
     <StyledDiv>
       <h2>Projects</h2>
@@ -29,7 +29,7 @@ const HomeProjects = (props) => {
             project={proj}
             activeProject={activeProject}
             key={proj.id}
-            handleClick = {handleClick}
+            handleClick={handleClick}
           />
         );
       })}
