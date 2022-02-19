@@ -17,8 +17,9 @@ const StyledFooter = styled.footer`
 const Footer = () => {
     return (
         <StyledFooter>
-            <h5>⚡💻⚡ Site created exclusively by John Merz ⚡💻⚡</h5>
             <h5>Let's talk! <Link to="/contact">🗣📧Contact Me!📧🗣</Link></h5>
+            <h5>⚡💻⚡ Site created exclusively by John Merz ⚡💻⚡</h5>
+            <Link to="https://github.com/jmerz826/portfolio" target="_blank">This Site's GitHub! 🔗</Link>
         </StyledFooter>
     );
 };
