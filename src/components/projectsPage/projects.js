@@ -6,7 +6,7 @@ import projects from "../../data/projects";
 const StyledDiv = styled.div`
   text-align: center;
     background-color: black;
-  div:nth-of-type(1) {
+  .container:nth-of-type(1) {
     margin-top: 2%;
   }
   padding-bottom: 1%;

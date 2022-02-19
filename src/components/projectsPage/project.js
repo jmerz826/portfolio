@@ -34,8 +34,13 @@ const StyledDiv = styled.div`
   .tools {
     display: flex;
     justify-content: center;
+    margin-top: 0 !important;
     div {
       margin: 0 2%;
+      h5{
+        font-style: italic;
+        text-decoration: underline;
+      }
     }
   }
   p {
@@ -56,7 +61,7 @@ const Project = (props) => {
   const { id, name, description, tools, live_link, github_link, image, time } =
     project;
   return (
-    <StyledDiv id={id}>
+    <StyledDiv id={id} className="container">
       <h3>{name}</h3>
       <div
         className="big-proj-img"
