@@ -32,7 +32,7 @@ const ContactPage = (props) => {
     <StyledDiv>
       <h2>Meet: John Merz</h2>
       <img src={linkedinPhoto} alt="headshot of John" />
-      <h3>Full Stack Developer</h3>
+      <h3>Full Stack Engineer/Developer</h3>
       <ul>
         <li>
           <a
