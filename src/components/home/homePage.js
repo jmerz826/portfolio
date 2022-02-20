@@ -69,8 +69,13 @@ const StyledHomePage = styled.div`
     h2{
       font-size: 2rem;
     }
-    #about-me p{
+    #about-me {
+    p{
       margin: 0 1%;
+    }
+      h3{
+        margin: auto 1% !important;
+      }
     }
   }
 `;
