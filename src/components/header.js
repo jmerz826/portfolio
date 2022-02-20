@@ -9,9 +9,88 @@ const StyledHeader = styled.header`
   padding: 1% 2%;
   color: rgb(37, 37, 37);
   border-bottom: 2px solid black;
-  /* position: sticky;
-  top: 0;
-  z-index: 1; */
+
+  @media (max-width: 1627px) {
+    h2 {
+      width: 16% !important;
+    }
+  }
+  @media (max-width: 1452px) {
+    h2 {
+      width: 18% !important;
+    }
+  }
+  @media (max-width: 1316px) {
+    h2 {
+      width: 25% !important;
+    }
+    .links {
+      width: 10% !important;
+    }
+  }
+  @media (max-width: 1048px) {
+    h2 {
+      width: 30% !important;
+    }
+  }
+  @media (max-width: 911px) {
+    h2 {
+      width: 35% !important;
+    }
+  }
+  @media (max-width: 814px) {
+    h2 {
+      width: 40% !important;
+    }
+  }
+  @media (max-width: 740px) {
+    h2 {
+      width: 50% !important;
+    }
+  }
+  @media (max-width: 637px) {
+    .links {
+      width: 18% !important;
+    }
+    .paths {
+      width: 60% !important;
+      justify-content: center;
+      a {
+        padding: 0 2% !important;
+      }
+    }
+  }
+  @media (max-width: 583px) {
+    h2 {
+      font-size: 3.2rem !important;
+    }
+    .paths a {
+      font-size: 1.25rem !important;
+    }
+  }
+  @media (max-width: 518px) {
+    h2 {
+      width: max-content !important;
+    }
+    .links {
+      width: fit-content !important;
+    }
+    .paths {
+      flex-direction: column;
+      width: min-content !important;
+      text-align: center;
+      align-items: center;
+      a {
+        width: min-content;
+        padding: 0 0.5rem !important;
+      }
+    }
+  }
+  @media (max-width: 370px) {
+    .links {
+      flex-direction: column;
+    }
+  }
 
   h2 {
     font-family: "Yellowtail", cursive;
