@@ -64,6 +64,15 @@ const StyledHomePage = styled.div`
     border: 4px solid black;
     box-shadow: 6px 6px 8px black;
   }
+
+  @media (max-width: 613px){
+    h2{
+      font-size: 2rem;
+    }
+    #about-me p{
+      margin: 0 1%;
+    }
+  }
 `;
 
 const HomePage = () => {

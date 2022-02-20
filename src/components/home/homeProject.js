@@ -44,7 +44,7 @@ const StyledDiv = styled.div`
           content: "🔨 ";
         }
       }
-      h5{
+      h5 {
         text-align: center;
         font-weight: bold;
       }
@@ -65,6 +65,13 @@ const StyledDiv = styled.div`
       margin: 0 1%;
     }
   }
+
+  @media (max-width: 800px) {
+    .project-details-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 `;
 
 const HomeProject = (props) => {
@@ -74,15 +81,19 @@ const HomeProject = (props) => {
   const { push } = useHistory();
 
   return (
-    <StyledDiv onClick={() => handleClick(id)} onDoubleClick={() => push(`/projects#${id}`)}>
-      <h3 >{name}</h3>
-      <img src={image} alt={name + " screenshot"}/>
+    <StyledDiv
+      onClick={() => handleClick(id)}
+      onDoubleClick={() => push(`/projects#${id}`)}
+    >
+      <h3>{name}</h3>
+      <img src={image} alt={name + " screenshot"} />
       {Number(activeProject) === id && (
         <div className="project-details">
           <div className="project-details-section">
             <h4>Description:</h4>
             <p>
-              {description.slice(0, 120)}... <Link to={`/projects#${id}`}>See more</Link>
+              {description.slice(0, 120)}...{" "}
+              <Link to={`/projects#${id}`}>See more</Link>
             </p>
           </div>
           <div className="project-details-section">

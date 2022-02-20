@@ -4,14 +4,20 @@ import projects from "../../data/projects";
 import HomeProject from "./homeProject";
 
 const StyledDiv = styled.div`
-height: 100%;
-overflow-y: hidden;
-  .projects-container{
+  height: 100%;
+  overflow-y: hidden;
+  .projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
     justify-content: space-around;
+  }
+
+  @media (max-width: 498px){
+    h2{
+      display: none;
+    }
   }
 `;
 
