@@ -21,7 +21,7 @@ const Bio = (props) => {
           Bloom Institute of Technology
         </a>
         . I am passionate about development because the field is constantly
-        evolving, and there never a shortage of new things to learn.
+        evolving; hence, there is never a shortage of new things to learn.
       </p>
       <div className="education">
         <h3 className="section-head">Education</h3>
@@ -39,7 +39,7 @@ const Bio = (props) => {
           </div>
           <div id="bloom-card">
             <img
-              style={{border: "2px solid black"}}
+              style={{ border: "2px solid black" }}
               src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/408/original/Bloom_Institute_of_Technology_logo.png"
               alt="BloomTech logo"
             />
