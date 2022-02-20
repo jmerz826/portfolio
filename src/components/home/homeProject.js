@@ -8,7 +8,7 @@ const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5% 10%;
+  margin: 0 5%;
   border: 1px solid lightblue;
   border-radius: 24px;
   padding: 2%;

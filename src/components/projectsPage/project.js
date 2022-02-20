@@ -105,7 +105,7 @@ const Project = (props) => {
         <a href={github_link} target="_blank" rel="noreferrer">
           GitHub🔗
         </a>
-        <p>Project active {time}</p>
+        <p>Project development period: {time}</p>
       </div>
     </StyledDiv>
   );
