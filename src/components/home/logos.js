@@ -43,6 +43,35 @@ const StyledLogos = styled.div`
       margin-bottom: 4%;
     }
   }
+  @media (max-width: 1225px){
+    div{
+      width: 20%;
+    }
+  }
+  @media (max-width: 1000px){
+    div{
+      height: 120px;
+    }
+  }
+  @media (max-width: 950px){
+    div{
+      width: 25%;
+    }
+  }
+  @media (max-width: 742px){
+    div{
+      width: 28%;
+      h4{
+        font-size: 1.25rem !important;
+      }
+    }
+  }
+  @media (max-width: 532px){
+    div{
+      height: 100px;
+      width: 46%;
+    }
+  }
 `;
 
 const Logos = () => {
