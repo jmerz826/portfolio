@@ -54,6 +54,23 @@ const StyledDiv = styled.div`
   h2{
     font-weight: bold;
   }
+  @media (max-width: 1100px){
+    .big-proj-img {
+      width: 80%;
+    }
+    p{
+      margin: 0 12%;
+    }
+  }
+  @media (max-width: 800px){
+    .big-proj-img {
+      width: 96%;
+    }
+    p{
+      margin: 0 4%;
+    }
+
+  }
 `;
 
 const Project = (props) => {
