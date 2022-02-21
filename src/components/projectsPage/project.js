@@ -54,7 +54,7 @@ const StyledDiv = styled.div`
   h2{
     font-weight: bold;
   }
-  @media (max-width: 1100px){
+  @media (max-width: 1200px){
     .big-proj-img {
       width: 80%;
     }
@@ -63,13 +63,13 @@ const StyledDiv = styled.div`
     }
   }
   @media (max-width: 800px){
+    margin: 5% !important;
     .big-proj-img {
       width: 96%;
     }
     p{
       margin: 0 4%;
     }
-
   }
 `;
 
