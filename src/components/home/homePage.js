@@ -78,6 +78,17 @@ const StyledHomePage = styled.div`
       }
     }
   }
+  @media (max-width: 498px){
+    h2{
+      font-size: 1.75rem;
+    }
+    #about-me{
+      width: 50% !important;
+    }
+    #projects-container{
+      width:50% !important;
+    }
+  }
 `;
 
 const HomePage = () => {

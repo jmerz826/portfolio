@@ -14,11 +14,6 @@ const StyledDiv = styled.div`
     justify-content: space-around;
   }
 
-  @media (max-width: 498px){
-    h2{
-      display: none;
-    }
-  }
 `;
 
 const HomeProjects = (props) => {
