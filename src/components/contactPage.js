@@ -16,6 +16,7 @@ const StyledDiv = styled.div`
     border-radius: 9999px;
     border: 6px solid black;
     margin-top: 1%;
+    box-shadow: 6px 10px 10px gray;
   }
   a {
     text-decoration: none;
@@ -24,6 +25,22 @@ const StyledDiv = styled.div`
   ul{
     margin-top: 2%;
     padding-bottom: 2%;
+  }
+  @media (max-width: 1100px){
+    img{
+      width: 30% !important;
+    }
+  }
+  @media (max-width: 640px){
+    img{
+      width: 40% !important;
+    }
+  }
+  @media (max-width: 432px){
+    img{
+      width: 50% !important;
+      margin: 5% 0 !important;
+    }
   }
 `;
 
