@@ -15,6 +15,7 @@ import expressLogo from "../../images/logos/expressLogo.png";
 import vsLogo from "../../images/logos/vsLogo.png";
 import jestLogo from "../../images/logos/jestLogo.png";
 import gitLogo from "../../images/logos/gitLogo.png";
+import tsLogo from '../../images/logos/Typescript.png';
 
 const StyledLogos = styled.div`
   display: flex;
@@ -84,6 +85,10 @@ const Logos = () => {
       <div>
         <img src={jsLogo} alt="javascript" />
         <h4>javascript</h4>
+      </div>
+      <div>
+        <img src={tsLogo} alt="typescript" />
+        <h4>typescript</h4>
       </div>
       <div>
         <img src={cssLogo} alt="css3" />
