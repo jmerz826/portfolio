@@ -3,7 +3,7 @@ import Footer from "./components/footer";
 import { Route, Switch } from 'react-router-dom';
 import HomePage from "./components/home/homePage";
 import ContactPage from "./components/contactPage";
-import {NewHomePage} from "./components/NewHomePage";
+import {NewHomePage} from "./components/v2/NewHomePage";
 import Projects from "./components/projectsPage/projects";
 
 const isV2 = window.location.href.includes('v2')
