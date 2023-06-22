@@ -1,8 +1,10 @@
 import React from "react";
+import { Header } from "./shared/Header";
+import './css/index.css'
 
 const NewHomePage = () => {
     return <>
-        <header>header</header>
+        <Header />
         <subnav>subnav</subnav>
         <p>something fun</p>
         <div>spelled out resume</div>
