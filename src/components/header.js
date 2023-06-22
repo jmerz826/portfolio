@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import './../index.css';
 
 const StyledHeader = styled.header`
   display: flex;
