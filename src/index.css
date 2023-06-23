@@ -150,12 +150,17 @@ h1 {
 
 h2 {
   font-size: 2.441rem;
-  font-family: 'Bungee Shade', cursive;
+  font-family: "Bungee Shade", cursive;
   margin-top: 1rem;
 }
 
-h3, h4, h5, a, li, p{
-  font-family: 'EB Garamond', serif;
+h3,
+h4,
+h5,
+a,
+li,
+p {
+  font-family: "EB Garamond", serif;
 }
 
 h3 {
@@ -210,7 +215,7 @@ a {
 }
 .ticker {
   display: inline-block;
-  font-family: 'Roboto Serif', sans-serif;
+  font-family: "Roboto Serif", sans-serif;
   white-space: nowrap;
   padding-right: 100%;
   box-sizing: content-box;
@@ -225,4 +230,3 @@ a {
   animation-duration: 12s;
 }
 /* --------- end of homePage moving ticker --------- */
-

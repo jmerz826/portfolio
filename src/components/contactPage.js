@@ -3,7 +3,7 @@ import styled from "styled-components";
 import linkedinPhoto from "../images/linkedinPhoto.jpg";
 
 const StyledDiv = styled.div`
-  background-color: #0F4C81;
+  background-color: #0f4c81;
   text-align: center;
 
   h2 {
@@ -22,22 +22,22 @@ const StyledDiv = styled.div`
     text-decoration: none;
     color: white;
   }
-  ul{
+  ul {
     margin-top: 2%;
     padding-bottom: 2%;
   }
-  @media (max-width: 1100px){
-    img{
+  @media (max-width: 1100px) {
+    img {
       width: 30% !important;
     }
   }
-  @media (max-width: 640px){
-    img{
+  @media (max-width: 640px) {
+    img {
       width: 40% !important;
     }
   }
-  @media (max-width: 432px){
-    img{
+  @media (max-width: 432px) {
+    img {
       width: 50% !important;
       margin: 5% 0 !important;
     }
@@ -70,11 +70,7 @@ const ContactPage = (props) => {
           </a>
         </li>
         <li>
-          <a
-            href="mailto:jmerz826@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="mailto:jmerz826@gmail.com" target="_blank" rel="noreferrer">
             Email: jmerz826@gmail.com 📧
           </a>
         </li>

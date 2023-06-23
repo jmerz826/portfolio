@@ -15,7 +15,7 @@ import expressLogo from "../../images/logos/expressLogo.png";
 import vsLogo from "../../images/logos/vsLogo.png";
 import jestLogo from "../../images/logos/jestLogo.png";
 import gitLogo from "../../images/logos/gitLogo.png";
-import tsLogo from '../../images/logos/Typescript.png';
+import tsLogo from "../../images/logos/Typescript.png";
 
 const StyledLogos = styled.div`
   display: flex;
@@ -44,31 +44,31 @@ const StyledLogos = styled.div`
       margin-bottom: 4%;
     }
   }
-  @media (max-width: 1225px){
-    div{
+  @media (max-width: 1225px) {
+    div {
       width: 20%;
     }
   }
-  @media (max-width: 1000px){
-    div{
+  @media (max-width: 1000px) {
+    div {
       height: 120px;
     }
   }
-  @media (max-width: 950px){
-    div{
+  @media (max-width: 950px) {
+    div {
       width: 25%;
     }
   }
-  @media (max-width: 742px){
-    div{
+  @media (max-width: 742px) {
+    div {
       width: 28%;
-      h4{
+      h4 {
         font-size: 1.25rem !important;
       }
     }
   }
-  @media (max-width: 532px){
-    div{
+  @media (max-width: 532px) {
+    div {
       height: 100px;
       width: 46%;
     }

@@ -71,7 +71,7 @@ const StyledDiv = styled.div`
       flex-direction: column;
       align-items: center;
     }
-    h3{
+    h3 {
       margin-bottom: 20%;
     }
     padding: 25% 2% !important;

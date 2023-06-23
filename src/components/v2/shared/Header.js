@@ -1,9 +1,11 @@
 import React from "react";
 
 const Header = () => {
-    return <header>
-        <input />
+  return (
+    <header>
+      <input />
     </header>
-}
+  );
+};
 
-export {Header}
+export { Header };

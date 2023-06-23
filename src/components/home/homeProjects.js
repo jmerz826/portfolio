@@ -13,7 +13,6 @@ const StyledDiv = styled.div`
     height: 100%;
     justify-content: space-around;
   }
-
 `;
 
 const HomeProjects = (props) => {

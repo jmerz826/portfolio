@@ -1,6 +1,6 @@
 import React from "react";
 import Logos from "./logos";
-import QualtricsImg from '../../images/Qualtrics.png';
+import QualtricsImg from "../../images/Qualtrics.png";
 
 const Bio = (props) => {
   const { headshot } = props;
@@ -12,16 +12,13 @@ const Bio = (props) => {
         My name is John, and I am an engineer at heart.
       </h3>
       <p>
-        I am currently
-        working as a web developer at{" "}
-        <a
-          href="https://www.qualtrics.com/"
-          target={"_blank"}
-          rel="noreferrer"
-        >
+        I am currently working as a web developer at{" "}
+        <a href="https://www.qualtrics.com/" target={"_blank"} rel="noreferrer">
           Qualtrics
         </a>
-        , and I absolutely love what I do.  While my background is in Mechanical Engineering, I don't regret for a second opting to shift my focus to software development.
+        , and I absolutely love what I do. While my background is in Mechanical
+        Engineering, I don't regret for a second opting to shift my focus to
+        software development.
       </p>
       <div className="education">
         <h3 className="section-head">Education</h3>
@@ -54,15 +51,29 @@ const Bio = (props) => {
       </div>
       <div className="experience">
         <h3 className="section-head">Experience</h3>
-        <div id='qualtrics'>
-          <img src={QualtricsImg} alt='qualtrics logo'
+        <div id="qualtrics">
+          <img
+            src={QualtricsImg}
+            alt="qualtrics logo"
             style={{
-              width: '50%', borderRadius: '50%',
-            border:'2px solid black',  marginTop: '1rem'
-            }} />
-          <h4 style={{ marginTop: '2%', fontStyle: 'italic' }}>Web Developer @ Qualtrics</h4>
-          <h5 style={{ fontStyle: 'italic', marginTop: '1%' }}>April 2022 - Present</h5>
-          <p>I'm currently working at Qualtrics as a part of the DSX (Digital Support Experience) team! This team is a part of the broader Public Platform Engineering team, and focuses on support sites and resources used by both customers and fellow employees, alike!</p>
+              width: "50%",
+              borderRadius: "50%",
+              border: "2px solid black",
+              marginTop: "1rem",
+            }}
+          />
+          <h4 style={{ marginTop: "2%", fontStyle: "italic" }}>
+            Web Developer @ Qualtrics
+          </h4>
+          <h5 style={{ fontStyle: "italic", marginTop: "1%" }}>
+            April 2022 - Present
+          </h5>
+          <p>
+            I'm currently working at Qualtrics as a part of the DSX (Digital
+            Support Experience) team! This team is a part of the broader Public
+            Platform Engineering team, and focuses on support sites and
+            resources used by both customers and fellow employees, alike!
+          </p>
         </div>
       </div>
       <div className="skills">

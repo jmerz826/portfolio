@@ -9,7 +9,7 @@ const StyledDiv = styled.div`
   box-shadow: 5px 5px 10px black;
   border-radius: 3rem;
   padding: 1%;
-  .project-detail-section h3{
+  .project-detail-section h3 {
     text-decoration: underline;
   }
   img {
@@ -37,7 +37,7 @@ const StyledDiv = styled.div`
     margin-top: 0 !important;
     div {
       margin: 0 2%;
-      h5{
+      h5 {
         font-style: italic;
         text-decoration: underline;
       }
@@ -51,23 +51,23 @@ const StyledDiv = styled.div`
     text-decoration: none;
     font-style: italic;
   }
-  h2{
+  h2 {
     font-weight: bold;
   }
-  @media (max-width: 1200px){
+  @media (max-width: 1200px) {
     .big-proj-img {
       width: 80%;
     }
-    p{
+    p {
       margin: 0 12%;
     }
   }
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     margin: 5% !important;
     .big-proj-img {
       width: 96%;
     }
-    p{
+    p {
       margin: 0 4%;
     }
   }
