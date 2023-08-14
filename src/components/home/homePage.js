@@ -1,9 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import headshot from "../../images/linkedinPhoto.jpg";
-import HomeProjects from "./homeProjects";
-import Bio from "./bio";
-import Ticker from "./ticker";
+import React from 'react';
+import styled from 'styled-components';
+import headshot from '../../images/linkedinPhoto.jpg';
+import HomeProjects from './homeProjects';
+import Bio from './bio';
 
 const StyledHomePage = styled.div`
   overflow-x: hidden;
@@ -65,28 +64,28 @@ const StyledHomePage = styled.div`
     box-shadow: 6px 6px 8px black;
   }
 
-  @media (max-width: 613px){
-    h2{
+  @media (max-width: 613px) {
+    h2 {
       font-size: 2rem;
     }
     #about-me {
-    p{
-      margin: 0 1%;
-    }
-      h3{
+      p {
+        margin: 0 1%;
+      }
+      h3 {
         margin: auto 1% !important;
       }
     }
   }
-  @media (max-width: 498px){
-    h2{
+  @media (max-width: 498px) {
+    h2 {
       font-size: 1.75rem;
     }
-    #about-me{
+    #about-me {
       width: 50% !important;
     }
-    #projects-container{
-      width:50% !important;
+    #projects-container {
+      width: 50% !important;
     }
   }
 `;
@@ -94,7 +93,6 @@ const StyledHomePage = styled.div`
 const HomePage = () => {
   return (
     <StyledHomePage>
-      <Ticker />
       <div id="content-container">
         <Bio headshot={headshot} />
         <div id="projects-container">

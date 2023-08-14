@@ -120,7 +120,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -154,7 +154,12 @@ h2 {
   margin-top: 1rem;
 }
 
-h3, h4, h5, a, li, p{
+h3,
+h4,
+h5,
+a,
+li,
+p {
   font-family: 'EB Garamond', serif;
 }
 
@@ -175,54 +180,3 @@ a {
   font-size: 1rem;
   line-height: 1.5;
 }
-
-/* --------- start of homePage moving ticker --------- */
-@-webkit-keyframes ticker {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-@keyframes ticker {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-.ticker-wrap {
-  position: relative;
-  top: 0;
-  width: 100%;
-  overflow: hidden;
-  padding-left: 100%;
-  box-sizing: content-box;
-  margin: 4% auto;
-}
-.ticker {
-  display: inline-block;
-  font-family: 'Roboto Serif', sans-serif;
-  white-space: nowrap;
-  padding-right: 100%;
-  box-sizing: content-box;
-
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-name: ticker;
-  animation-name: ticker;
-  -webkit-animation-duration: 12s;
-  animation-duration: 12s;
-}
-/* --------- end of homePage moving ticker --------- */
-
