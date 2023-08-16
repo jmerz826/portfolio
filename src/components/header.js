@@ -6,7 +6,7 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ff8000;
+  background-color: lightblue;
   padding: 1% 2%;
   color: rgb(37, 37, 37);
   border-bottom: 2px solid black;
